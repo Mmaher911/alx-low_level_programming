@@ -6,7 +6,7 @@
  * @n: is the number of time
 */
 
-void print_diagonal(int n);
+void print_diagonal(int n)
 {
 	int postn, space;
 
