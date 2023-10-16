@@ -24,5 +24,4 @@ void rev_string(char *s)
 		s[i] = s[l - 1 - i]; /*-1 because the array start from 0*/
 		s[l - 1 - i] = temp;
 	}
-	_putchar('\n');
 }
