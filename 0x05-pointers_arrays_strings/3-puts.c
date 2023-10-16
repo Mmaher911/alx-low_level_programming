@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _strlen  - return the length og a string
+ * _puts  - print  a string, followed by new line
  *
- * @s: string parameter input
+ * @str: string parameter input
  *
- * Return: length of string
+ * Return: Nothing
 */
 
 void _puts(char *str)
