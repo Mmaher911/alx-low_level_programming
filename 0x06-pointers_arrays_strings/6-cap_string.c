@@ -11,6 +11,7 @@ int islower(char c)
 {
 	return (c >= 97 && c <= 122);
 }
+
 /**
  * isDelimiter - determines whether ascii is a delimiter
  * @c: character
