@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * islower - detrmines whether ascii is lowercase
+ * isLower - detrmines whether ascii is lowercase
  * @c: character
  * Return: 1 if true, 0 if false
 */
 
-int islower(char c)
+int isLower(char c)
 {
 	return (c >= 97 && c <= 122);
 }
@@ -43,7 +43,7 @@ char *cap_string(char *s)
 	{
 		if (isDelimiter(*s))
 			foundDelimit = 1;
-		else if (islower(*s) && foundDelimit)
+		else if (isLower(*s) && foundDelimit)
 		{
 			*s -= 32;
 			foundDelimit = 0;
