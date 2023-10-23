@@ -5,7 +5,6 @@
  * print_diagsums - description
  * @size: size of array
  * @a: array on int
- * Return: nothing.
 */
 
 void print_diagsums(int *a, int size)
