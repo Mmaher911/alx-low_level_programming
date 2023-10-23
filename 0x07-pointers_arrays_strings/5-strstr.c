@@ -1,21 +1,34 @@
 #include "main.h"
 
 /**
- * *_strstr - 
- * @s: pointer to put the constant
- * @b: constant
- * @n: max bytes to use
- * Return: pointer s
+ * *_strstr - Write a function that locates a substring
+ *
+ * @needle: constant
+ * @haystack: substring
+ *
+ * Return: nothing
 */
 
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int itr;
-
-	for (itr = 0; n > 0; itr++, n--)
+	while (*haystack != '\0')
 	{
-		s[itr] = b;
-	}
+		if (*haystack == *needle)
+		{
+			char *haystack_ptr = haystack;
+			char *needle_ptr = needle;
 
-	return (s);
+			while (*haystack_ptr == *needle_ptr && *haystack_ptr != '\0')
+			{
+				haystack_ptr++;
+				needle_ptr++;
+			}
+			if (*needle_ptr == '\0')
+			{
+				return (haystack);
+			}
+		}
+		haystack++;
+	}
+	return ('\0');
 }
