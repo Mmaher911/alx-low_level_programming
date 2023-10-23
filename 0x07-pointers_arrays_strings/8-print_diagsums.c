@@ -3,8 +3,8 @@
 
 /**
  * print_diagsums - description
- * @size: size of array
  * @a: array on int
+ * @size: size of array
 */
 
 void print_diagsums(int *a, int size)
