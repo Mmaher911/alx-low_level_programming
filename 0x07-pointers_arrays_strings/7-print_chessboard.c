@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * print_chessboard - print chessboard
+ * print_chessboard - prints chessboard.
  *
- * @a: rows
- *
- * Return: nothing
+ * @a: rows.
+ * Return: nothing.
 */
 
 void print_chessboard(char (*a)[8])
@@ -20,5 +19,4 @@ void print_chessboard(char (*a)[8])
 		}
 		_putchar('\n');
 	}
-
 }
