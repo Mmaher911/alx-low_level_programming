@@ -43,7 +43,7 @@ int is_palindrome(char *s)
 
 int check(char *s, int start, int end, int mod)
 {
-	if ((strat == end && mod != 0) || (start == end + 1 && mod == 0))
+	if ((start == end && mod != 0) || (start == end + 1 && mod == 0))
 	{
 		return (1);
 	}
