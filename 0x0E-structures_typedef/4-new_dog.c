@@ -18,7 +18,7 @@ int _strlen(const char *str)
 }
 
 /**
- * _strcpy - copies the string with \0 to the buffer
+ * _strcopy - copies the string with \0 to the buffer
  * @dest: pointer to dest
  * @src: pointer to string
  *
