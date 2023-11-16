@@ -8,54 +8,25 @@
  * Description: adds a new node at the beginning
  * Return: address of new element
  */
+
 list_t *add_node(list_t **head, const char *str)
 {
-	int count = 0;
-	list_t *temp;
+	list_t *temp_head = malloc(sizeof(list_t));
 
-	temp = malloc(sizeof(list_t));
-	if (temp == NULL)
+	if (!head || !temp_head)
 		return (NULL);
-	temp->str = _strdup(str);
-	while (str[count] != '\0')
-		count++;
-	temp->len = count;
-	temp->next = *head;
-	*head = temp;
-	return (temp);
-}
-
-/**
- * *_strdup - function with one argument
- * @str: string argument
- *
- * Description: returns a pointer to allocated space in memory
- * Return: pointer
- */
-char *_strdup(const char *str)
-{
-	int i, j;
-	char *ptr;
-
-	if (str == NULL)
-		return (NULL);
-	i = 0;
-	while (*(str + i) != '\0')
+	if (str)
 	{
-		i++;
+		temp_head->str = _strdup(str);
+		if (!temp_head->str)
+		{
+			free(temp_head);
+			return (null);
+		}
+		temp_head->len = _strlen(temp_head->str);
 	}
 
-	ptr = malloc(sizeof(char) * i + 1);
-
-	if (ptr == NULL)
-		return (NULL);
-
-	j = 0;
-	while (str[j] != '\0')
-	{
-		ptr[j] = str[j];
-		j++;
-	}
-	ptr[j] = '\0';
-	return (ptr);
+	temp_head->next = *head;
+	*head = temp_head;
+	return (temp_head);
 }
