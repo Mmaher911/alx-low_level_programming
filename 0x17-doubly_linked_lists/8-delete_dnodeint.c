@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
  * delete_dnodeint_at_index - Delete node at nth index
  *
